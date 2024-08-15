@@ -1,0 +1,43 @@
+body{
+    overflow-x: hidden;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    font-style: italic;
+}
+.btn{
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    background: conic-gradient(rgb(19, 177, 239) 0%, transparent 0%);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    z-index: 22;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.show{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
